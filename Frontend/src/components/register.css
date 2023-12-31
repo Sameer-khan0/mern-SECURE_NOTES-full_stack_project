@@ -1,0 +1,183 @@
+/* Global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Main container */
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("bgmain.jpeg");
+  background-size: cover;
+}
+
+/* Animations */
+
+@keyframes opacityofpage {
+  from {
+    opacity: 0;
+    transform: translateX(70%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+/* Content container */
+
+.main0 {
+  animation: opacityofpage 1s ease-in-out;
+  border: 1px solid white;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(157, 157, 157, 0.5);
+  width: 70%;
+  height: 85%;
+  display: flex;
+}
+
+/* Message and form containers */
+
+.message{
+  padding: 1%;
+}
+.message,
+.foam {
+  animation: opacityofpage 0.7s ease-in;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Message section */
+
+.message {
+  background-color: #007bff;
+  color: white;
+}
+
+.mainmessage {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.downmessage {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.mainfoam {
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formmain {
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form elements */
+
+.loginname {
+  font-size: 2em;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.downbtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnsubmit {
+  background-color: #58a9ff;
+  color: white;
+  height: 40px;
+  width: 90px;
+  border-radius: 10%;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btnsubmit:hover {
+  background-color: white;
+  color: #58a9ff;
+  border: 1px solid #ddd;
+}
+
+.inputin {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+#showpass {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Responsive styles */
+
+@media only screen and (max-width: 768px) {
+  .main0 {
+    width: 90%;
+  }
+  .message{
+    display: none;
+  }
+  .foam{
+    width: 100%;
+  }
+
+  .mainfoam {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main0 {
+    width: 95%;
+  }
+  .message{
+    display: none;
+  }
+  
+  .mainfoam {
+    width: 95%;
+  }
+
+  .loginname {
+    font-size: 1.5em;
+  }
+}

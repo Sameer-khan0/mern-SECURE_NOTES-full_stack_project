@@ -1,0 +1,114 @@
+/* Navbar styles */
+.navbar {
+  border-right: 1px solid #ddd;
+  width: 25vh;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  transition: width 0.3s ease-in-out;
+}
+
+.mainnavbar {
+  width: 90%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Profile section styles */
+.navprofile {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+}
+
+.imgbox {
+  border-radius: 50%;
+  border: 5px solid #1fc7fa;
+  width: 80%;
+  height: 90%;
+  margin: auto;
+}
+
+.proimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  cursor: pointer;
+}
+
+.profiledetali {
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+}
+
+/* Navigation links styles */
+.navul {
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+.spannav {
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.comname{
+  margin: 10%;
+}
+.spannav:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* Logout section styles */
+.logout {
+  border-top: 1px solid #ddd;
+  color: black;
+  font-weight: bold;
+  width: 100%;
+  height: 25%;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.logoutmain {
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    width: 15vh; /* Adjust the width for smaller screens */
+  }
+}

@@ -1,0 +1,13 @@
+.alllables1{
+    border: white;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.modal-header{
+    height: 50vh;
+    width: 100%;
+    flex-direction: column;
+}

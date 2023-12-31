@@ -1,0 +1,132 @@
+.alltcom{
+    display: flex;
+    flex-direction: row;
+}
+.comnavview{
+    width: 25vh;
+    height: 100%;
+}
+@keyframes opacityv{
+    from{
+   opacity: 0;
+}
+to{
+        opacity: 1;
+    }
+}
+.innercom{
+    animation:opacityv 0.6s ease-in ;
+    background-image: url('../webpics/newmain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainabout{
+    width: 84%;
+    height: 100vh;
+    
+}
+.mainanotes{
+    width: 84%;
+    height: 100%;
+}
+.maincnotes{
+    width: 84%;
+    height: 100%;
+}
+.mainabout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innercom{
+    width: 95%;
+    border-radius: 3%;
+    height: 95%;
+    box-shadow: 0px 0px 9px #b2b2b2;
+}
+.aboutweb{
+    text-align: center;
+}
+.mainanotes{
+    width: 84%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: overlay;
+}
+.notpre{
+    text-align: center;
+    height: 10vh;
+    padding: 17px;
+}
+.cnotesinner{
+    animation:opacityv 0.6s ease-in ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../webpics/newmain.jpg');
+}
+.maincnotes{
+    background-color: transparent;
+    padding: 20px;
+}
+.alllables{
+    background-color: transparent;
+}
+.not{
+    background: white;
+}
+
+.add-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    cursor: pointer;
+    width: 20vh;
+    background-color: #3498db;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s; /* Added smooth transition */
+}
+
+.add-box:hover {
+    background-color: #3498db;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s; /* Added smooth transition */
+}
+
+.box a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.box:hover {
+    background-color: #299dff;
+    box-shadow: 0px 0px 10px #299dff;
+    color: #000;
+}
+
+.plus:hover {
+    font-weight: bold;
+}
+.cnotesinner{
+    width: 95%;
+    border-radius: 3%;
+    height: 95%;
+    box-shadow: 0px 0px 9px #b2b2b2;    
+}
